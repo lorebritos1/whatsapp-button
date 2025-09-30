@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón WhatsApp Flotante</title>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c4a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón WhatsApp Flotante -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.844.744 5.505 2.034 7.853L0 32l8.424-2.025A15.933 15.933 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zM16 29.6c-2.55 0-4.935-.7-6.968-1.9l-.5-.3-4.98 1.2 1.264-4.867-.326-.502A13.518 13.518 0 012.4 16c0-7.536 6.064-13.6 13.6-13.6S29.6 8.464 29.6 16 23.536 29.6 16 29.6zM22.2 19.6c-.3-.15-1.764-.867-2.038-.967-.274-.1-.474-.15-.674.15s-.774.966-.95 1.164c-.175.2-.35.225-.65.075-.3-.15-1.264-.465-2.41-1.487-.89-.788-1.49-1.76-1.664-2.06-.175-.3-.018-.462.132-.612.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.674-1.625-.925-2.225-.242-.587-.488-.512-.674-.512-.175 0-.375-.025-.575-.025s-.525.075-.8.375c-.274.3-1.045 1.02-1.045 2.487s1.07 2.887 1.225 3.087c.15.2 2.125 3.238 5.15 4.538.72.31 1.28.495 1.715.632.72.225 1.38.193 1.9.118.58-.082 1.764-.72 2.012-1.415.25-.694.25-1.287.175-1.415-.075-.125-.274-.2-.575-.35z"/>
+        </svg>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            // Cambia el número por tu WhatsApp en formato internacional sin + ni espacios
+            window.open("https://wa.me/543515487437", "_blank");
+        }
+    </script>
+
+</body>
+</html>
